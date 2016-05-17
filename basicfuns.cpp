@@ -56,9 +56,7 @@ void rowReduce(vector<vector<double>> &mat)
             {
                 swap(mat[nextpivot][k],mat[pivot][k]);
             }
-            printMat(mat); cout << endl;
             rowDivide(mat[pivot],i);
-            printMat(mat); cout << endl;
             for(int k = pivot+1;k<rows;k++)
             {
                 double multiplier = mat[k][i];
